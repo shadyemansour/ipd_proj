@@ -23,6 +23,7 @@ const userProfiles = [
     text: "Yomna is a  Post Graduate Student at the Department of Construction and Building Engineering of the Arab Academy for Science, Technology, and Maritime Transport in Cairo, Egypt and a Senior Tendering Engineer at ElSewedy Electric for Infrastructure Works. Yomna is pursuing a career in the construction industry, while working on her Master’s Degree. Yomna earned her BSc in Construction Engineering and Management from the German University in Cairo in 2018.",
     twitter: "https://www.twitter.com",
     linkedin: "https://www.linkedin.com/in/yomnaemad/",
+    email: "yomnaemansour@gmail.com",
   },
   {
     src: "img/cards/eid.jpg",
@@ -32,6 +33,7 @@ const userProfiles = [
     text: "Eid is an Associate Professor at the Department of Construction and Building Engineering of the Arab Academy for Science, Technology, and Maritime Transport in Cairo, Egypt. Eid earned his PhD in Civil and Environmental Engineering from The University of Tennessee, Knoxville in May 2017. He received his MS and BS in Construction Engineering and Management in 2012 and 2008, respectively.",
     twitter: "https://www.twitter.com",
     linkedin: "https://www.linkedin.com",
+    email: "",
   },
   {
     src: "img/cards/basyoni.jpg",
@@ -41,6 +43,7 @@ const userProfiles = [
     text: "Professor of Construction Management (AASTMT), PhD (U. Loughborough, UK), MIBA (ESLSCA, France), ME (U. Florida, USA), BSc (U. Alexandria, Egypt), and Project Management Professional - PMP (PMI, USA). Dean of College of Continuing Education, Arab Academy for Science, Technology & Maritime Transport (under development). Has a varied practical and academic experience for over 22 years. Published over 30 research papers in various construction management leading journals and conferences.",
     twitter: "https://www.twitter.com",
     linkedin: "https://www.linkedin.com",
+    email: "",
   },
 ];
 const Home = () => {
@@ -58,7 +61,7 @@ const Home = () => {
         />
         <MiddleBlock
           title={MiddleBlockContent.title}
-          content={`Here you can simply <b>Explore</b> the website for different research papers and meet their authors, Preview videos explaining each research’s proposed model, interactively test it on adopted examples, and finally leave your fingerprint by Participating in its corresponding survey.`}
+          content={MiddleBlockContent.text}
           button={MiddleBlockContent.button}
           id="overview"
         />
@@ -66,7 +69,7 @@ const Home = () => {
           type="right"
           title={MissionContent.title}
           content={MissionContent.text}
-          icon="product-launch.svg"
+          icon="moneyBag.gif"
           id="project"
           button={MissionContent.button}
         />
@@ -100,7 +103,6 @@ const Home = () => {
           id="distributing"
           fade="right"
         />
-
         <MiddleBlock title="Application" id="application" />
         <Video
           src="/videos/distributing.mp4"

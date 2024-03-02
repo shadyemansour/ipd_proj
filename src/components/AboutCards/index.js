@@ -12,7 +12,12 @@ const UserProfileCard = ({
   text,
   twitter,
   linkedin,
+  email,
 }) => {
+  const handleMailTo = () => {
+    window.location.href = `mailto:${email}`;
+  };
+
   return (
     <Card>
       <Image src={src} alt={alt} />
@@ -27,7 +32,7 @@ const UserProfileCard = ({
       <CardText>{text}</CardText>
 
       <p>
-        <Button>Contact</Button>
+        <Button onClick={handleMailTo}>Contact</Button>
       </p>
     </Card>
   );

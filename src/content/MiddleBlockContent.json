@@ -1,5 +1,9 @@
 {
   "title": "What can I do?",
-  "text": "Here you can simply <b>Explore</b> the website for different research papers and meet their authors, Preview videos explaining each research’s proposed model, interactively test it on adopted examples, and finally leave your fingerprint by Participating in its corresponding survey.",
-  "button": "Get started"
+  "text": "Here you can simply [b]explore[/b] the website for different research papers and meet their authors, [b]preview[/b] videos explaining each research’s proposed model, interactively [b]test it[/b] on adopted examples, and finally leave your fingerprint by [b]participating[/b] in its corresponding survey.",
+
+  "button": {
+    "title": "Get Started",
+    "scrollTo": "project"
+  }
 }
