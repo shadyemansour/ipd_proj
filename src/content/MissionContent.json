@@ -1,4 +1,14 @@
 {
   "title": "Division of Cost Deviations in IPD Systems",
-  "text": "The aim of this project is to fairly distribute cost deviations in Integrated Project Delivery (IPD) systems by quantifying contributions in monetary terms and using the Shapley Value, a cooperative game theory approach. It involves modeling project progress with earned value management and testing the model through simulations. The goal is to ensure equitable cost allocation among stakeholders based on their marginal contributions."
+  "text": "The aim of this project is to fairly distribute cost deviations in Integrated Project Delivery (IPD) systems by quantifying contributions in monetary terms and using the Shapley Value, a cooperative game theory approach. It involves modeling project progress with earned value management and testing the model through simulations. The goal is to ensure equitable cost allocation among stakeholders based on their marginal contributions.",
+  "button": [
+    {
+      "title": "Presentation",
+      "link": "./assets/presentation.pdf"
+    },
+    {
+      "title": "Poster",
+      "link": "./assets/poster.pdf"
+    }
+  ]
 }

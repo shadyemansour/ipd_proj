@@ -68,6 +68,7 @@ const Home = () => {
           content={MissionContent.text}
           icon="product-launch.svg"
           id="project"
+          button={MissionContent.button}
         />
         {/* <ContentBlock
           type="left"

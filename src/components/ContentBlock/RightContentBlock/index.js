@@ -12,6 +12,14 @@ import {
 } from "./styles";
 
 const RightBlock = ({ title, content, button, icon, t, id }) => {
+  const handleClick = (item) => {
+    if (item.link) {
+      window.location.href = item.link;
+    } else if (item.scrollToId) {
+      scrollTo(item.scrollToId);
+    }
+  };
+
   const scrollTo = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -37,7 +45,7 @@ const RightBlock = ({ title, content, button, icon, t, id }) => {
                         key={id}
                         color={item.color}
                         fixedWidth={true}
-                        onClick={() => scrollTo(item.scrollToId)}
+                        onClick={() => handleClick(item)}
                       >
                         {t(item.title)}
                       </Button>
