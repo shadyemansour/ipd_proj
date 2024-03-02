@@ -114,16 +114,4 @@ export const Styles = createGlobalStyle`
     .about-block-image svg {
         text-align: center;
     }
-
-    .ant-drawer-body {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        padding-top: 1.5rem;
-         background-color: ${colors.main.secondaryBackground};
-    }
-
-    .ant-drawer-content-wrapper {
-        width: 300px !important;
-    }
 `;

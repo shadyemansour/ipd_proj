@@ -6,6 +6,7 @@ import { colors } from "../../styles/colors";
 
 const ScrollToTop = () => {
   const [showScroll, setShowScroll] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const checkScrollTop = (event) => {
     const offsetFromTop = getScroll(event.target, true);
@@ -31,15 +32,21 @@ const ScrollToTop = () => {
     });
   };
 
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseLeave = () => setIsHovered(false);
+
   return (
-    <ScrollUpContainer onClick={scrollUp} show={showScroll}>
-      {/* <SvgTopIcon
-        src="scroll-top.svg"
+    <ScrollUpContainer
+      onClick={scrollUp}
+      show={showScroll}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <SvgIcon
+        src={isHovered ? "scroll-top-dark.svg" : "scroll-top-light.svg"}
         width="20px"
         height="20px"
-        color={colors.main.secondary}
-      /> */}
-      <SvgIcon src="scroll-top.svg" width="20px" height="20px" />
+      />
     </ScrollUpContainer>
   );
 };

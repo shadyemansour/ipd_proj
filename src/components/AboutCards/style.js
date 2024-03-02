@@ -58,6 +58,7 @@ export const CardText = styled.p`
 
 // Styled anchor
 export const Anchor = styled.a`
+  padding: 10px;
   text-decoration: none;
   font-size: 12 px;
   color: black;

@@ -44,19 +44,19 @@ export const ContactWrapper = styled.div`
 `;
 
 export const Burger = styled.div`
-  @media only screen and (max-width: 890px) {
+  @media only screen and (max-width: 1065px) {
     display: block;
   }
 
   display: none;
-
   svg {
-    fill: ${colors.main.secondary};
+    fill: ${(props) =>
+      props.isvisible ? colors.main.secondary : colors.main.secondary};
   }
 `;
 
 export const NotHidden = styled.div`
-  @media only screen and (max-width: 890px) {
+  @media only screen and (max-width: 1065px) {
     display: none;
   }
 `;
@@ -65,11 +65,13 @@ export const Menu = styled.h5`
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
+  color: ${colors.main.backgroud};
 `;
 
 export const CustomNavLinkSmall = styled(NavLink)`
   font-size: 1.2rem;
-  color: ${colors.main.text.header};
+  color: ${(props) =>
+    props.menuOpen ? colors.main.backgroud : colors.main.text.header};
   transition: color 0.2s ease-in;
   margin: 0.5rem 2rem;
 

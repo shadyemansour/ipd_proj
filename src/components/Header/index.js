@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { Row, Col, Drawer } from "antd";
+import { Row, Col } from "antd";
+import { CustomDrawer } from "../Drawer";
 import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import Button from "../../common/Button";
+import { colors } from "../../styles/colors";
 import {
   HeaderSection,
   LogoContainer,
@@ -42,22 +44,37 @@ const Header = ({ t }) => {
     };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("overview")}>
+        <CustomNavLinkSmall
+          onClick={() => scrollTo("overview")}
+          menuOpen={visible}
+        >
           <Span>{t("Overview")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("project")}>
+        <CustomNavLinkSmall
+          onClick={() => scrollTo("project")}
+          menuOpen={visible}
+        >
           <Span>{t("Project")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("theory")}>
+        <CustomNavLinkSmall
+          onClick={() => scrollTo("theory")}
+          menuOpen={visible}
+        >
           <Span>{t("Theory")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("application")}>
+        <CustomNavLinkSmall
+          onClick={() => scrollTo("application")}
+          menuOpen={visible}
+        >
           <Span>{t("Application")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("survey")}>
+        <CustomNavLinkSmall
+          onClick={() => scrollTo("survey")}
+          menuOpen={visible}
+        >
           <Span>{t("Survey")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("team")}>
+        <CustomNavLinkSmall onClick={() => scrollTo("team")} menuOpen={visible}>
           <Span>{t("About Us")}</Span>
         </CustomNavLinkSmall>
         {/* <CustomNavLinkSmall
@@ -82,11 +99,11 @@ const Header = ({ t }) => {
           <NotHidden>
             <MenuItem />
           </NotHidden>
-          <Burger onClick={showDrawer}>
+          <Burger onClick={showDrawer} isvisible={visible}>
             <Outline />
           </Burger>
         </Row>
-        <Drawer closable={false} open={visible} onClose={onClose}>
+        <CustomDrawer closable={false} open={visible} onClose={onClose}>
           <Col style={{ marginBottom: "2.5rem" }}>
             <Label onClick={onClose}>
               <Col span={12}>
@@ -98,7 +115,7 @@ const Header = ({ t }) => {
             </Label>
           </Col>
           <MenuItem />
-        </Drawer>
+        </CustomDrawer>
       </Container>
     </HeaderSection>
   );

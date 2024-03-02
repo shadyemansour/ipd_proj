@@ -4,15 +4,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons"; // for a brand icon
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"; // for a solid icon
 
-const UserProfileCard = ({ src, alt, name, title, text }) => {
+const UserProfileCard = ({
+  src,
+  alt,
+  name,
+  title,
+  text,
+  twitter,
+  linkedin,
+}) => {
   return (
     <Card>
       <Image src={src} alt={alt} />
       <Name>{name}</Name>
-      <Anchor href="#">
+      <Anchor href={twitter}>
         <FontAwesomeIcon icon={faTwitter} />
       </Anchor>
-      <Anchor href="#">
+      <Anchor href={linkedin}>
         <FontAwesomeIcon icon={faLinkedin} />
       </Anchor>
       <Title>{title}</Title>

@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
-import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
@@ -17,11 +16,13 @@ const UserProfileCard = lazy(() => import("../../components/AboutCards"));
 
 const userProfiles = [
   {
-    src: "https://www.w3schools.com/w3images/team2.jpg",
-    alt: "Jane",
+    src: "img/cards/mansour.jpg",
+    alt: "Mansour",
     name: "Yomna Emad Mansour",
     title: "Postgrad Student",
     text: "Yomna is a  Post Graduate Student at the Department of Construction and Building Engineering of the Arab Academy for Science, Technology, and Maritime Transport in Cairo, Egypt and a Senior Tendering Engineer at ElSewedy Electric for Infrastructure Works. Yomna is pursuing a career in the construction industry, while working on her Master’s Degree. Yomna earned her BSc in Construction Engineering and Management from the German University in Cairo in 2018.",
+    twitter: "https://www.twitter.com",
+    linkedin: "https://www.linkedin.com/in/yomnaemad/",
   },
   {
     src: "img/cards/eid.jpg",
@@ -29,13 +30,17 @@ const userProfiles = [
     name: "Mohamed Saeid Eid",
     title: "Associate Professor of Construction Management",
     text: "Eid is an Associate Professor at the Department of Construction and Building Engineering of the Arab Academy for Science, Technology, and Maritime Transport in Cairo, Egypt. Eid earned his PhD in Civil and Environmental Engineering from The University of Tennessee, Knoxville in May 2017. He received his MS and BS in Construction Engineering and Management in 2012 and 2008, respectively.",
+    twitter: "https://www.twitter.com",
+    linkedin: "https://www.linkedin.com",
   },
   {
     src: "img/cards/basyoni.jpg",
     alt: "Basyoni",
     name: "Hesham Ahmed Basyoni",
     title: "Professor of Construction Management",
-    text: "Professor of Construction Management (AASTMT), PhD (U. Loughborough, UK), MIBA (ESLSCA, France), ME (U. Florida, USA), BSc (U. Alexandria, Egypt), and Project Management Professional - PMP (PMI, USA). Dean of College of Continuing Education, Arab Academy for Science, Technology & Maritime Transport (under development) Has a varied practical and academic experience for over 22 years. Consultancy and practical experience has been in the areas of: Project and program management contract administration and claims management FIDIC & Bespoke Contracts project scheduling and control: cost estimating and control feasibility studies, business cases and business plans and project risk management. Organizational business management and restructuring business process re-engineering quality control and assurance business excellence business performance management (Balanced Scorecard) strategic management risk management and Disaster Risk Management (DRM). Published over 30 research papers in various construction management leading journals and conferences. Refereed papers to leading construction management journals and conferences.",
+    text: "Professor of Construction Management (AASTMT), PhD (U. Loughborough, UK), MIBA (ESLSCA, France), ME (U. Florida, USA), BSc (U. Alexandria, Egypt), and Project Management Professional - PMP (PMI, USA). Dean of College of Continuing Education, Arab Academy for Science, Technology & Maritime Transport (under development). Has a varied practical and academic experience for over 22 years. Published over 30 research papers in various construction management leading journals and conferences.",
+    twitter: "https://www.twitter.com",
+    linkedin: "https://www.linkedin.com",
   },
 ];
 const Home = () => {
@@ -107,14 +112,6 @@ const Home = () => {
           id="interactive"
           fade="left"
         />
-        {/* <ContentBlock
-          type="left"
-          title={AboutContent.title}
-          content={AboutContent.text}
-          section={AboutContent.section}
-          icon="graphs.svg"
-          id="about"
-        /> */}
         <ContentBlock
           type="right"
           title={ProductContent.title}

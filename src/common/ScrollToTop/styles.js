@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { colors } from "../../styles/colors";
 
 export const ScrollUpContainer = styled.div`
-  padding: 10px;
+  padding: 6px;
   position: fixed;
-  right: 30px;
-  bottom: 30px;
+  left: 1px;
+  bottom: 20px;
   z-index: 10;
   cursor: pointer;
   background: ${colors.main.secondaryBackground};
@@ -23,7 +23,5 @@ export const ScrollUpContainer = styled.div`
     background: ${colors.main.scrollToTopHover};
   }
 
-  @media screen and (max-width: 1240px) {
-    display: none;
   }
 `;
