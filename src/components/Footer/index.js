@@ -41,7 +41,18 @@ const Footer = ({ t }) => {
 
   return (
     <>
-      {/* <FooterSection>
+      {/*<FooterSection>
+        <Container>
+          <Row justify="space-between">
+            <Col lg={10} md={10} sm={12} xs={12}>
+              <LogoContainer to="/" aria-label="homepage">
+                <SvgIcon src="logo-inverted.svg" width="101px" height="64px" />
+              </LogoContainer>
+            </Col>
+          </Row>
+        </Container>
+      </FooterSection>
+      <FooterSection>
         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
@@ -93,14 +104,19 @@ const Footer = ({ t }) => {
             </Col>
           </Row>
         </Container>
-      </FooterSection> */}
+      </FooterSection>  */}
+
       <Extra>
         <Container border={true}>
           <Row
             justify="space-between"
             align="middle"
-            style={{ paddingTop: "3rem" }}
-          ></Row>
+            style={{ paddingTop: "1rem" }}
+          >
+            <LogoContainer to="/" aria-label="homepage">
+              <SvgIcon src="logo-inverted.svg" width="101px" height="64px" />
+            </LogoContainer>
+          </Row>
         </Container>
       </Extra>
     </>
