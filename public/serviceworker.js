@@ -12,13 +12,13 @@ importScripts(
 if (workbox) {
   // Register a route for requests to the backend API
   workbox.routing.registerRoute(
-    ({ url }) => url.port === "3001",
+    ({ url }) => true,
     new workbox.strategies.NetworkFirst({
       cacheName: "api-cache",
       plugins: [
         new workbox.expiration.ExpirationPlugin({
           maxEntries: 50,
-          maxAgeSeconds: 24 * 60 * 60, // Cache for one day
+          maxAgeSeconds: 240 * 60 * 60, // Cache for one day
         }),
       ],
     })

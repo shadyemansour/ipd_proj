@@ -9,8 +9,23 @@
       "purpose": "any maskable"
     },
     {
-      "src": "img/icons/logo192.png",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "img/icons/logo16.png",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "img/icons/logo24.png",
+      "sizes": "24x24",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "img/icons/logo32.png",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "img/icons/logo64.png",
+      "sizes": "64x64",
       "type": "image/x-icon"
     },
     {
