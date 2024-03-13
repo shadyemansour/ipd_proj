@@ -16,7 +16,7 @@ const UserProfileCard = lazy(() => import("../../components/AboutCards"));
 
 const userProfiles = [
   {
-    src: "img/cards/mansour.jpg",
+    src: "img/cards/mansour.png",
     alt: "Mansour",
     name: "Yomna Emad Mansour",
     title: "Postgrad Student",
@@ -26,7 +26,7 @@ const userProfiles = [
     email: "yomnaemansour@gmail.com",
   },
   {
-    src: "img/cards/eid.jpg",
+    src: "img/cards/eid.png",
     alt: "Eid",
     name: "Mohamed Saeid Eid",
     title: "Associate Professor of Construction Management",
@@ -36,7 +36,7 @@ const userProfiles = [
     email: "",
   },
   {
-    src: "img/cards/basyoni.jpg",
+    src: "img/cards/basyoni.png",
     alt: "Basyoni",
     name: "Hesham Ahmed Basyoni",
     title: "Professor of Construction Management",
