@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
-import "antd/dist/antd.css"; // Import Ant Design styles
+import "antd/dist/antd.min.css";
 import Slide from "react-awesome-reveal";
 
 const CardContainer = ({ title, id, children }) => {
