@@ -27,7 +27,7 @@ const VideoComponent = ({
             controls={controls}
             autoPlay={autoPlay}
             loop={loop}
-            poster={poster} // This is a thumbnail to show before the video plays
+            poster={poster}
           >
             <source src={src} type="video/mp4" />
             Your browser does not support the video tag.

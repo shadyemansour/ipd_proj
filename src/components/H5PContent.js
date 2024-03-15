@@ -15,7 +15,7 @@ const H5PContent = () => {
   return (
     <div>
       <iframe
-        src="videos/deviations_distribution_model.h5p"
+        src="https://buildwisecom.h5p.com/content/1292219679791135587/embed"
         aria-label="Deviations Distribution Model"
         width="1088"
         height="637"

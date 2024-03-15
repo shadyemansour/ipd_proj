@@ -22,15 +22,18 @@ const UserProfileCard = ({
     <Card>
       <Image src={src} alt={alt} />
       <Name>{name}</Name>
-      <Anchor href={twitter}>
-        <FontAwesomeIcon icon={faTwitter} />
-      </Anchor>
-      <Anchor href={linkedin}>
-        <FontAwesomeIcon icon={faLinkedin} />
-      </Anchor>
+      {twitter && (
+        <Anchor href={twitter}>
+          <FontAwesomeIcon icon={faTwitter} />
+        </Anchor>
+      )}
+      {linkedin && (
+        <Anchor href={linkedin}>
+          <FontAwesomeIcon icon={faLinkedin} />
+        </Anchor>
+      )}
       <Title>{title}</Title>
       <CardText>{text}</CardText>
-
       <p>
         <Button onClick={handleMailTo}>Contact</Button>
       </p>
