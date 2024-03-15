@@ -5,6 +5,7 @@ import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import CardContainer from "../../common/CardContainer";
+import H5PContent from "../../components/H5PContent";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -104,17 +105,7 @@ const Home = () => {
           fade="right"
         />
         <MiddleBlock title="Application" id="application" />
-        <Video
-          src="/videos/distributing.mp4"
-          width="100%"
-          height="500"
-          controls={true}
-          autoPlay={false}
-          loop={false}
-          title="Interactive Example (BSESC Project)"
-          id="interactive"
-          fade="left"
-        />
+        <H5PContent />
         <ContentBlock
           type="right"
           title={ProductContent.title}
