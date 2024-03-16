@@ -1,6 +1,6 @@
 export const colors = {
   main: {
-    backgroud: "#fff5e3",
+    backgroud: "#ffffff",
     secondary: "#3d0015",
     onHover: { color: "#75012a", textColor: "#fff" },
     secondaryBackground: "#3d0015",
