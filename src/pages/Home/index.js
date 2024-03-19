@@ -1,13 +1,11 @@
 import React, { lazy, Suspense } from "react";
 import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
-import MissionContent from "../../content/MissionContent.json";
-import ProductContent from "../../content/ProductContent.json";
-import ContactContent from "../../content/ContactContent.json";
+import ProjectContent from "../../content/ProjectContent.json";
+import SurveyContent from "../../content/SurveyContent.json";
 import CardContainer from "../../common/CardContainer";
 import H5PContent from "../../components/H5PContent";
 
-const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
@@ -68,19 +66,12 @@ const Home = () => {
         />
         <ContentBlock
           type="right"
-          title={MissionContent.title}
-          content={MissionContent.text}
+          title={ProjectContent.title}
+          content={ProjectContent.text}
           icon="moneyBag.gif"
           id="project"
-          button={MissionContent.button}
+          button={ProjectContent.button}
         />
-        {/* <ContentBlock
-          type="left"
-          title={ProductContent.title}
-          content={ProductContent.text}
-          icon="waving.svg"
-          id="product"
-        /> */}
         <MiddleBlock title="Theory" id="theory" />
         <Video
           src="/videos/ipd_101.mp4"
@@ -110,17 +101,12 @@ const Home = () => {
         <H5PContent />
         <ContentBlock
           type="right"
-          title={ProductContent.title}
-          content={ProductContent.text}
+          title={SurveyContent.title}
+          content={SurveyContent.text}
           icon="survey.gif"
           id="survey"
-          button={ProductContent.button}
+          button={SurveyContent.button}
         />
-        {/* <Contact
-          title={ContactContent.title}
-          content={ContactContent.text}
-          id="contact"
-        /> */}
         <CardContainer title="Meet the Team" id="team">
           {userProfiles.map((profile, index) => (
             <UserProfileCard key={index} {...profile} />

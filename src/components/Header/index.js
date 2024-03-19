@@ -4,8 +4,6 @@ import { CustomDrawer } from "../Drawer";
 import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
-import Button from "../../common/Button";
-import { colors } from "../../styles/colors";
 import {
   HeaderSection,
   LogoContainer,
@@ -77,14 +75,6 @@ const Header = ({ t }) => {
         <CustomNavLinkSmall onClick={() => scrollTo("team")} menuOpen={visible}>
           <Span>{t("About Us")}</Span>
         </CustomNavLinkSmall>
-        {/* <CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
-        >
-          <Span>
-            <Button>{t("Contact")}</Button>
-          </Span>
-        </CustomNavLinkSmall> */}
       </>
     );
   };

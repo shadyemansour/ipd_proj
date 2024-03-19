@@ -10,14 +10,7 @@ const CardContainer = ({ title, id, children }) => {
         <h6>{title}</h6>
         <Row gutter={[24, 24]} wrap={true} id={id}>
           {React.Children.map(children, (child, index) => (
-            <Col
-              key={index}
-              xs={24}
-              sm={12}
-              md={8}
-              lg={8}
-              xl={8} // These breakpoints determine the number of columns
-            >
+            <Col key={index} xs={24} sm={12} md={8} lg={8} xl={8}>
               {child}
             </Col>
           ))}

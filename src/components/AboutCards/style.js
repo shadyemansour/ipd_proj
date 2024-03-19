@@ -49,7 +49,7 @@ export const Button = styled.button`
 `;
 
 export const CardText = styled.p`
-  font-size: 16px; /* Adjust text size as needed */
+  font-size: 16px;
   text-align: justify;
   padding-top: 0px;
   padding-right: 20px;

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Drawer } from "antd";
 import { colors } from "../styles/colors";
 
-// Example of extending the Drawer style with styled-components
 export const CustomDrawer = styled(Drawer)`
   .ant-drawer-body {
     display: flex;

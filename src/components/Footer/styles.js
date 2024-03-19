@@ -17,16 +17,15 @@ export const Title = styled.h4`
   }
 `;
 
-export const NavLink = styled(Link)`
-  display: block;
-  font-size: 1rem;
+export const NavLink = styled.a`
   margin-bottom: 0.625rem;
   transition: all 0.2s ease-in-out;
+  color: ${colors.main.backgroud};
 
   &:hover,
   &:active,
   &:focus {
-    color: #15418e;
+    color: ${colors.main.onHover.color};
   }
 `;
 
@@ -46,8 +45,8 @@ export const LogoContainer = styled.div`
 
 export const Para = styled.div`
   color: ${colors.main.text.light};
-  font-size: 14px;
-  width: 70%;
+  font-size: 12px;
+  width: 100%;
 `;
 
 export const Large = styled(Link)`

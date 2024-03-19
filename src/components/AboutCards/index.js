@@ -1,8 +1,7 @@
 import React from "react";
 import { Card, Image, Title, Anchor, Button, CardText, Name } from "./style";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons"; // for a brand icon
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"; // for a solid icon
+import { faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const UserProfileCard = ({
   src,
