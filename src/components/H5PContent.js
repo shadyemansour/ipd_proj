@@ -15,14 +15,18 @@ const H5PContent = () => {
   return (
     <div>
       <iframe
-        src="https://buildwisecom.h5p.com/content/1292219679791135587/embed"
-        aria-label="Deviations Distribution Model"
+        src="https://buildwise.h5p.com/content/1292304416590648867/embed"
+        aria-label="BSESC Case Study"
         width="1088"
         height="637"
         frameborder="0"
         allowfullscreen="allowfullscreen"
         allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
       ></iframe>
+      <script
+        src="https://buildwise.h5p.com/js/h5p-resizer.js"
+        charset="UTF-8"
+      ></script>
     </div>
   );
 };
